@@ -136,13 +136,13 @@ class PelicanThemeStudioPlugin implements HasPluginSettings, Plugin
   public function saveSettings(array $data): void
   {
     $this->writeToEnvironment([
-      "THEME_PRIMARY" => $data["primary"],
-      "THEME_GRAY" => $data["gray"],
-      "THEME_INFO" => $data["info"],
-      "THEME_SUCCESS" => $data["success"],
-      "THEME_WARNING" => $data["warning"],
-      "THEME_DANGER" => $data["danger"],
-      "THEME_RADIUS" => $data["radius"],
+      "TXYZ_THEME_PRIMARY" => $data["primary"],
+      "TXYZ_THEME_GRAY" => $data["gray"],
+      "TXYZ_THEME_INFO" => $data["info"],
+      "TXYZ_THEME_SUCCESS" => $data["success"],
+      "TXYZ_THEME_WARNING" => $data["warning"],
+      "TXYZ_THEME_DANGER" => $data["danger"],
+      "TXYZ_THEME_RADIUS" => $data["radius"],
     ]);
 
     Notification::make()
