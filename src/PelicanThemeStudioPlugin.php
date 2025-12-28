@@ -26,8 +26,8 @@ class PelicanThemeStudioPlugin implements HasPluginSettings, Plugin
   {
     $cfg = config("pelican-theme-studio");
     $panel->colors([
-      "primary" => $this->hexToScale($cfg["primary"] ?? "#7c3aed"),
-      "gray" => $this->hexToScale($cfg["gray"] ?? "#64748b"),
+      "primary" => $this->hexToScale($cfg["primary"] ?? "#0053cf"),
+      "gray" => $this->hexToScale($cfg["gray"] ?? "#000000"),
       "info" => $this->hexToScale($cfg["info"] ?? "#0ea5e9"),
       "success" => $this->hexToScale($cfg["success"] ?? "#22c55e"),
       "warning" => $this->hexToScale($cfg["warning"] ?? "#f59e0b"),
@@ -49,7 +49,7 @@ class PelicanThemeStudioPlugin implements HasPluginSettings, Plugin
           !preg_match('/^(\d+(\.\d+)?)(px|rem|em|%)$/', trim($radius)) &&
           $radius !== "0"
         ) {
-          $radius = "0.75rem";
+          $radius = "0.50rem";
         }
 
         // Custom radius injection
