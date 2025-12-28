@@ -1,0 +1,11 @@
+{
+  "id": "pelican-theme-studio",
+  "name": "Theme Studio",
+  "author": "tomatexyz",
+  "version": "1.0.0",
+  "description": "Simply customize panel colors + border radius. Applies on next reload.",
+  "category": "theme",
+  "url": "https://github.com/tomate-xyz/pelican-theme-studio",
+  "namespace": "Tomatexyz\\PelicanThemeStudio",
+  "class": "PelicanThemeStudioPlugin"
+}
